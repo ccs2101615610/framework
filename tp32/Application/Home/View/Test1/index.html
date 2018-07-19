@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	{$data1} <hr />
+	<if condition="$data2['sex'] eq '男'">
+        强大
+    <else />
+        相对弱小需要保护
+    </if>
+    <hr />
+    <foreach name="data3"  key="k" item="v" >
+        {$v.name}__{$v.age} __{$v.sex}<br />
+    </foreach>
+</body>
+</html>
